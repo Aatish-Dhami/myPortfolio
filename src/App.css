@@ -12,9 +12,9 @@ nav {
     display: flex;
     align-items: center;
     margin-top: 0%;
-    background-color:white;
-    height: 50px;
-    padding: 15px 15px 15px;
+    /* background-color:white; */
+    height: 45px;
+    padding: 10px 45px 10px;
 }
 
 nav.dark {
@@ -31,9 +31,28 @@ nav.dark .title {
     color: #F5F5F5;
 }
 
+
+/* Nav Menu */
+
+.nav--menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 /* Nav-ele Styles */
 .nav--elements {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav--elements > a {
+    color: #000;
+}
+
+nav.dark .nav--elements > a{
+    color: white;
 }
 
 /* Toggler Styles */
@@ -101,13 +120,50 @@ nav.dark .toggler--slider {
 /* Main Styles */
 
 main {
-    background-color: #FFFFFF;
+    background-color:white;
     position: absolute;
-    top: 50px;
+    padding: 10px 25px 10px;
+    top: 40px;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
 }
 
 main.dark {
-    background-color: black;
+    background-color:black;
+    position: absolute;
+    padding: 10px 85px 10px;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.main--content {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+.main--content > p {
+    margin-bottom: 0%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.main--content > h1 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+main.dark .main--content {
+    color: white;
+    margin-left: 10px;
+    margin-right: auto;
 }

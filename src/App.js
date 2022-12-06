@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
-import Main from './components/Main';
+import Home from './components/Home';
+
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false)
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-      <Main darkMode={darkMode}/>
+      <Home darkMode={darkMode}/>
     </div>
   );
 }
