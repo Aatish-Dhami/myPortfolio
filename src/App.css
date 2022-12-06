@@ -122,7 +122,7 @@ nav.dark .toggler--slider {
 main {
     background-color:white;
     position: absolute;
-    padding: 10px 25px 10px;
+    padding: 10px 65px 10px;
     top: 40px;
     width: 100%;
     height: 100%;
@@ -133,21 +133,19 @@ main {
 
 main.dark {
     background-color:black;
-    position: absolute;
-    padding: 10px 85px 10px;
-    top: 40px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 100px;
 }
 
 .main--content {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    margin-left: 60px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+main.dark .main--content {
+    color: white;
+    margin-left: 20px;
     margin-right: auto;
 }
 
@@ -162,8 +160,3 @@ main.dark {
     margin-top: 0%;
 }
 
-main.dark .main--content {
-    color: white;
-    margin-left: 10px;
-    margin-right: auto;
-}

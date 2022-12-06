@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 export default function Home(props) {
-    const srcImg = `../images/${props.darkMode ? "ad_checks_b.png" : "ad_checks_w.JPEG"}`
+    const srcImg = `../images/${props.darkMode ? "ad_checks_w.png" : "ad_checks_w.png"}`
 
     return (
         <main className={props.darkMode ? "dark": ""}>
@@ -17,12 +17,10 @@ export default function Home(props) {
                 <p>
                     <TypeWriterEffect 
                         textStyle={{
-                            // fontFamily: 'Red Hat Display',
-                            // color: '#3F3D56',
                             fontWeight: 500,
                             fontSize: '1.5em',
                         }}
-                        startDelay={4000}
+                        startDelay={3000}
                         multiText={[
                             'Software Developer',
                             'Full Stack Developer',
@@ -30,7 +28,6 @@ export default function Home(props) {
                             'Self Learner',
                         ]}
                         multiTextLoop="true"
-                        // hideCursorAfterText = "true"
                     />
                 </p>
             </div>
