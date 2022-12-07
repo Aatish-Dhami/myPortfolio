@@ -1,15 +1,11 @@
 import CProgressBar from "./CProgressBar"
-import { useRef, useState } from 'react'
-import { useInView } from 'react-intersection-observer'
 
 export default function Skills(props) {
-    const myRef = useRef();
-    const [myState, setMyState] = useState()
 
     return(
         <div className={props.darkMode ? "skills-dark": "skills"}>
             <h1>Skills</h1>
-            <div className="skills--grid" ref={myRef}>
+            <div className={props.darkMode ? "skills--grid-dark": "skills--grid"}>
 
                 <div className="grid--item">
                 <CProgressBar startValue={0} endValue={95} speed={20} text="Java" darkMode={props.darkMode}/>
@@ -40,7 +36,6 @@ export default function Skills(props) {
                 <CProgressBar startValue={0} endValue={65} speed={20} text="Matplotlib" darkMode={props.darkMode}/>
                 <CProgressBar startValue={0} endValue={65} speed={20} text="Git" darkMode={props.darkMode}/>
                 </div>
-
             </div>
         </div>
     )

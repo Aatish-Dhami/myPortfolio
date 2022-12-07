@@ -4,6 +4,7 @@
 
 body {
     padding: 0%;
+    margin: 0%;
 }
 
 /* NavBar Styles */
@@ -168,18 +169,14 @@ main.dark .main--content {
 /* Skills Section*/
 
 .skills {
+    /* background-color: #606060; */
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #606060; */
-    /* display: flex; */
-    /* flex-direction: column; */
     padding: 0px 60px;
     align-items: center;
-    /* width: 1400px; */
 }
 
 .skills-dark {
-    /* margin-top: -23px; */
     margin-left: auto;
     margin-right: auto;
     background-color:black;
@@ -203,6 +200,19 @@ main.dark .main--content {
 /* Skill Grid */
 .skills--grid { 
     margin: 50px 250px;
+    margin-bottom: 0%;
+    /* background-color:aqua; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 373px);
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-rows: minmax(150px, auto);
+    gap: 30px;
+    justify-content: center;
+}
+
+.skills--grid-dark {
+    margin: 50px 250px;
+    margin-bottom: 0%;
     /* background-color:aqua; */
     display: grid;
     grid-template-columns: repeat(auto-fill, 373px);
