@@ -3,7 +3,7 @@ import CProgressBar from "./CProgressBar"
 export default function Skills(props) {
 
     return(
-        <div className={props.darkMode ? "skills-dark": "skills"}>
+        <div id="skills" className={props.darkMode ? "skills-dark": "skills"}>
             <h3>Skills</h3>
             <div className={props.darkMode ? "skills--grid-dark": "skills--grid"}>
 

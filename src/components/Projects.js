@@ -2,7 +2,7 @@ import Cards from "./Cards"
 
 export default function Projects(props) {
     return(
-        <div className={props.darkMode ? "projects-dark" : "projects"}>
+        <div id="projects" className={props.darkMode ? "projects-dark" : "projects"}>
             <h3>Projects</h3>
             <div className={props.darkMode ? "projects--grid-dark": "projects--grid"}>
                 <div className="projects--grid--item">

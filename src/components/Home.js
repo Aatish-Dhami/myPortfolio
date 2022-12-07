@@ -1,10 +1,9 @@
 import TypeWriterEffect from 'react-typewriter-effect';
 
 export default function Home(props) {
-    const srcImg = `../images/${props.darkMode ? "ad_checks_w.png" : "ad_checks_w.png"}`
 
     return (
-        <main className={props.darkMode ? "dark": ""}>
+        <main id='#home' className={props.darkMode ? "dark": ""}>
             <div className='main--content'>
                 <p>Hello! I'm</p>
                 <h1>
@@ -31,7 +30,6 @@ export default function Home(props) {
                 </p>
             </div>
 
-            {/* <img src={srcImg} className='main--image'/> */}
         </main>
     )
 }

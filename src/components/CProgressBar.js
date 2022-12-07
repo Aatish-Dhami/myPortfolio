@@ -19,9 +19,9 @@ export default function CProgressBar(props) {
         background: `conic-gradient(aquamarine ${counter * 3.6}deg, #ededed 0deg)`
     }
 
-    React.useEffect(() => {
-      return () => clearInterval(myInterval.current);
-    }, []);
+    // React.useEffect(() => {
+    //   return () => clearInterval(myInterval.current);
+    // }, []);
   
     // useEffect that start/stop interval on flag change
     React.useEffect(() => {
@@ -34,19 +34,17 @@ export default function CProgressBar(props) {
         clearInterval(myInterval.current);
         myInterval.current = null;
       }
-    }, [isRunning]);
+    }, [isRunning, props.speed]);
 
     React.useEffect(() => {
         if(counter === props.endValue) {
             clearInterval(myInterval.current)
         }
-    })
+    }, )
 
     React.useEffect(() => {
         if(isVisible){
             setIsRunning(true)
-        }else{
-            setIsRunning(false)
         }
     }, [isVisible])
 
