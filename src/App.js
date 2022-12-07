@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false)
@@ -16,6 +17,7 @@ function App() {
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>      
       <Home darkMode={darkMode}/>
       <Skills darkMode={darkMode}/>
+      <Projects darkMode={darkMode}/>
     </div>
   );
 }

@@ -7,7 +7,7 @@ body {
     margin: 0%;
 }
 
-/* NavBar Styles */
+                                    /* NavBar Styles */
 
 nav {
     display: flex;
@@ -118,7 +118,7 @@ nav.dark .toggler--slider {
     justify-content: flex-end;
 }
 
-/* Main Styles */
+                                        /* Main Styles */
 
 main {
     /* background-color:beige; */
@@ -166,7 +166,7 @@ main.dark .main--content {
     margin-top: 0%;
 }
 
-/* Skills Section*/
+                                    /* Skills Section*/
 
 .skills {
     /* background-color: #606060; */
@@ -184,26 +184,34 @@ main.dark .main--content {
     align-items: center;
 }
 
-.skills > h1 {
+.skills > h3 {
     display: flex;
     justify-content: center;
+    font-size:xx-large;
 }
 
-.skills-dark > h1 {
+.skills-dark > h3 {
     margin: 0%;
     display: flex;
     justify-content: center;
     background-color:black;
     color: #FFFFFF;
+    font-size:xx-large;
+
 }
 
 /* Skill Grid */
 .skills--grid { 
-    margin: 50px 250px;
+    /* margin: 50px 250px; */
+    /* padding: 50px 250px; */
+    margin-top: 50px;
     margin-bottom: 0%;
     /* background-color:aqua; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, 373px);
+    /* grid-template-columns: repeat(auto-fit, minmax(calc(100%/4), 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(max(373px, 100%/4), 1fr));
+
+    /* grid-template-columns: repeat(auto-fit, 373px); */
     /* grid-template-columns: auto auto auto; */
     grid-auto-rows: minmax(150px, auto);
     gap: 30px;
@@ -211,18 +219,21 @@ main.dark .main--content {
 }
 
 .skills--grid-dark {
-    margin: 50px 250px;
+    /* margin: 50px 250px; */
     margin-bottom: 0%;
+    margin-top: 50px;
     /* background-color:aqua; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, 373px);
+    grid-template-columns: repeat(auto-fit, minmax(max(373px, 100%/4), 1fr));
+
+    /* grid-template-columns: repeat(auto-fit, minmax(calc(100%/4), 373px)); */
     /* grid-template-columns: auto auto auto; */
     grid-auto-rows: minmax(150px, auto);
     gap: 30px;
     justify-content: center;
 }
 
-.grid--item {
+.skills--grid--item {
     /* background-color: #000; */
     display: flex;
     justify-content:space-evenly;
@@ -273,9 +284,92 @@ main.dark .main--content {
     font-weight: 400;
     color: #606060;
 }
-/* .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: #606060;
-} */
+
+                                    /* Projects */
+
+.projects > h3 {
+    padding-top: 100px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+}
+
+.projects-dark > h3 {
+    padding-top: 100px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    color: #FFFFFF;
+    font-size:xx-large;
+
+}
  
+.projects {
+    /* background-color: #606060; */
+    /* margin-top: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 60px;
+    align-items: center;
+}
+
+.projects-dark {
+    /* margin-top: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    padding: 0px 60px;
+    align-items: center;
+}
+
+
+/* Skill Grid */
+.projects--grid { 
+    padding-bottom: 100px;
+    align-self: center;
+    justify-content: center;
+    /* padding: 0px 50px; */
+    /* margin: 50px 350px; */
+    margin-bottom: 0%;
+    margin-top: 50px;
+
+    /* background-color:aqua; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(240px, 100%/4), 1fr));
+    /* grid-template-columns: repeat(auto-fit, 240px); */
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-rows: minmax(150px, auto);
+    gap: 30px;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.projects--grid-dark {
+    padding-bottom: 100px;
+    align-self: center;
+    justify-content: center;
+    /* padding: 0px 50px; */
+    /* margin: 50px 350px; */
+    margin-bottom: 0%;
+    margin-top: 50px;
+    /* background-color:aqua; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(240px, 100%/4), 1fr));
+    /* grid-template-columns: repeat(auto-fit, 240px); */
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-rows: minmax(150px, auto);
+    gap: 30px;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.projects--grid--item {
+    /* width: 240px; */
+    /* background-color: #000; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
