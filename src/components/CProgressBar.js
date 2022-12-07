@@ -1,16 +1,22 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer'
 
-export default function CProgressBar() {
-    const [counter, setCounter] = React.useState(0);
-    const [isRunning, setIsRunning] = React.useState(true);
+export default function CProgressBar(props) {
+    const { ref: myRef, inView: isVisible } = useInView()
+    // props: startValue, endValue, speed, text
+
+    const [counter, setCounter] = React.useState(props.startValue);
+    const [isRunning, setIsRunning] = React.useState(false);
     const myInterval = React.useRef();
+    const dark = props.darkMode ? "white": "black"
 
     const progressValueStyles = {
-        textContent: counter
+        // textContent: props.text,
+        color: dark
     }
 
     const circularProgressStyles = {
-        background: `conic-gradient(#7d2ae8 ${counter * 3.6}deg, #ededed 0deg)`
+        background: `conic-gradient(aquamarine ${counter * 3.6}deg, #ededed 0deg)`
     }
 
     React.useEffect(() => {
@@ -22,7 +28,7 @@ export default function CProgressBar() {
       if (isRunning) {
         myInterval.current = setInterval(
           () => setCounter((counter) => counter + 1),
-          20
+          props.speed
         );
       } else {
         clearInterval(myInterval.current);
@@ -31,18 +37,23 @@ export default function CProgressBar() {
     }, [isRunning]);
 
     React.useEffect(() => {
-        if(counter === 90) {
+        if(counter === props.endValue) {
             clearInterval(myInterval.current)
         }
     })
 
-    return (
-        <div className="container">
-            <div className="circular-progress" style={circularProgressStyles}>
-                <span style={progressValueStyles} className="progress-value">{counter}</span>
-            </div>
+    React.useEffect(() => {
+        if(isVisible){
+            setIsRunning(true)
+        }else{
+            setIsRunning(false)
+        }
+    }, [isVisible])
 
-        <span className="text">HTML & CSS</span>
+
+    return (
+        <div ref={myRef} className="circular-progress" style={circularProgressStyles}>
+            <span style={progressValueStyles} className="progress-value">{props.text}</span>
         </div>
     )
 }

@@ -120,7 +120,7 @@ nav.dark .toggler--slider {
 /* Main Styles */
 
 main {
-    background-color:beige;
+    /* background-color:beige; */
     /* position: absolute; */
     padding: 10px 65px 10px;
     top: 40px;
@@ -133,7 +133,6 @@ main {
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
-
 }
 
 main.dark {
@@ -146,7 +145,7 @@ main.dark {
     justify-content:flex-start;
     margin-left: 20px;
     margin-right: auto;
-
+    
 }
 
 main.dark .main--content {
@@ -166,24 +165,76 @@ main.dark .main--content {
     margin-top: 0%;
 }
 
-/* SkillBar */
+/* Skills Section*/
 
-.container{
-    display: flex;
-    width: 420px;
-    padding: 50px 0;
-    border-radius: 8px;
-    background: #fff;
-    row-gap: 30px;
-    flex-direction: column;
+.skills {
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #606060; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0px 60px;
+    align-items: center;
+    /* width: 1400px; */
+}
+
+.skills-dark {
+    /* margin-top: -23px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    padding: 0px 60px;
     align-items: center;
 }
+
+.skills > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-dark > h1 {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    color: #FFFFFF;
+}
+
+/* Skill Grid */
+.skills--grid { 
+    margin: 50px 250px;
+    /* background-color:aqua; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 373px);
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-rows: minmax(150px, auto);
+    gap: 30px;
+    justify-content: center;
+}
+
+.grid--item {
+    /* background-color: #000; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+/* 
+.skills--row {
+    background-color:#918E9B;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+/* SkillBar */
+
 .circular-progress{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    background: conic-gradient(aquamarine 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,20 +242,30 @@ main.dark .main--content {
 .circular-progress::before{
     content: "";
     position: absolute;
-    height: 210px;
-    width: 210px;
+    height: 118px;
+    width: 118px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: white;
 }
+
+.skills-dark .circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 118px;
+    width: 118px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .progress-value{
     position: relative;
-    font-size: 40px;
-    font-weight: 600;
-    color: #7d2ae8;
+    font-size: 20px;
+    font-weight: 400;
+    color: #606060;
 }
-.text{
+/* .text{
     font-size: 30px;
     font-weight: 500;
     color: #606060;
-}
+} */
  
