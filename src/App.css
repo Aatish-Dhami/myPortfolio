@@ -120,15 +120,20 @@ nav.dark .toggler--slider {
 /* Main Styles */
 
 main {
-    background-color:white;
-    position: absolute;
+    background-color:beige;
+    /* position: absolute; */
     padding: 10px 65px 10px;
     top: 40px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     gap: 100px;
+    background-image: url(../public/images/ad_checks_w.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
+
 }
 
 main.dark {
@@ -141,6 +146,7 @@ main.dark {
     justify-content:flex-start;
     margin-left: 20px;
     margin-right: auto;
+
 }
 
 main.dark .main--content {
@@ -160,3 +166,45 @@ main.dark .main--content {
     margin-top: 0%;
 }
 
+/* SkillBar */
+
+.container{
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+ 

@@ -1,4 +1,3 @@
-import Typewriter from 'typewriter-effect';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 export default function Home(props) {
@@ -32,7 +31,7 @@ export default function Home(props) {
                 </p>
             </div>
 
-            <img src={srcImg} className='main--image'/>
+            {/* <img src={srcImg} className='main--image'/> */}
         </main>
     )
 }
