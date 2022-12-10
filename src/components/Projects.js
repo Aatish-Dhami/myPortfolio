@@ -11,7 +11,7 @@ export default function Projects(props) {
                     src="../images/notes.png"
                     url="https://notes-ad.netlify.app/"
                     title="Notes App"
-                    desc="Built a notes app using react. Click to write some quick notes :)"
+                    desc="Built a notes app using react. Click to visit the live site and write some quick notes :)"
                 />
                 </div>
                 <div className="projects--grid--item">
@@ -29,11 +29,21 @@ export default function Projects(props) {
                 <div className="projects--grid--item">
                 <Cards 
                     darkMode={props.darkMode} 
+                    src="../images/path.png"
+                    url="https://path-visualizer-ad.netlify.app"
+                    title="Path Visualizer"
+                    desc="Built a Path Visualizer using React.Js
+                    Shows how Dijkstras Algorithm works. Click to visit the live site."
+                />
+                </div>
+                <div className="projects--grid--item">
+                <Cards 
+                    darkMode={props.darkMode} 
                     src="../images/tenzies.png"
                     url="https://tenzies-ad.netlify.app/"
                     title="Tenzies"
-                    desc="Built a Tenzies game using React.Js
-                    Click to Play :)"
+                    desc="Built a Tenzies game using React.Js.
+                    Click to visit the live site and play :)"
                 />
                 </div>
             </div>

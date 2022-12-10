@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>      
       <Home darkMode={darkMode}/>
-      <Skills darkMode={darkMode}/>
       <Projects darkMode={darkMode}/>
+      <Skills darkMode={darkMode}/>
     </div>
   );
 }
