@@ -123,17 +123,18 @@ nav.dark .toggler--slider {
 main {
     /* background-color:beige; */
     /* position: absolute; */
+    background-color:antiquewhite;
+    display: flex;
     padding: 10px 65px 10px;
     top: 40px;
     width: 100%;
     height: 100vh;
-    display: flex;
     align-items: center;
-    gap: 100px;
-    background-image: url(../public/images/ad_checks_w.png);
+    /* gap: 100px; */
+    /* background-image: url(../public/images/ad_checks_w.png);
     background-repeat: no-repeat;
     background-position-x: 90%;
-    background-position-y: 50%;
+    background-position-y: 50%; */
 }
 
 main.dark {
@@ -141,12 +142,17 @@ main.dark {
 }
 
 .main--content {
+    gap: 0px;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-left: auto;
+    /* background-color: #918E9B; */
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     margin-left: 20px;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 
 main.dark .main--content {
@@ -157,8 +163,8 @@ main.dark .main--content {
 
 .main--content > p {
     margin-bottom: 0%;
-    margin-top: 2%;
-    margin-left: 1%;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 
 .main--content > h1 {
