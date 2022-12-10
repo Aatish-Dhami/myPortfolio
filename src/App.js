@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(true)
     
   function toggleDarkMode() {
       setDarkMode(prevDarkMode => prevDarkMode ? false : true)    

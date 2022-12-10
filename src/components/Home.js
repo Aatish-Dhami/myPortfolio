@@ -1,18 +1,24 @@
 import TypeWriterEffect from 'react-typewriter-effect';
 
 export default function Home(props) {
+    // const mainStyles = {
+    //     alignItems: window.innerWidth <= 700 ? 'flex-start' : 'center'
+    // }
+
+    console.log(window.innerWidth)
 
     return (
         <main id='#home' className={props.darkMode ? "dark": ""}>
-            <div className='main--content'>
+            <div className='main--content' >
                 <p>Hello! I'm</p>
                 <h1>
                     <TypeWriterEffect 
                         text="Aatish Dhami"
                         hideCursorAfterText = "true"
                     />
+                    {/* Aatish Dhami */}
                 </h1>
-                <p>
+                <h4>
                     <TypeWriterEffect 
                         textStyle={{
                             fontWeight: 500,
@@ -27,7 +33,7 @@ export default function Home(props) {
                         ]}
                         multiTextLoop="true"
                     />
-                </p>
+                </h4>
             </div>
 
         </main>

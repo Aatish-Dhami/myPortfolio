@@ -125,7 +125,7 @@ main {
     /* position: absolute; */
     background-color:rgb(255, 255, 255);
     display: flex;
-    padding: 10px 65px 10px;
+    /* padding: 10px 65px 10px; */
     top: 40px;
     width: 100%;
     height: 100vh;
@@ -144,32 +144,77 @@ main.dark {
 .main--content {
     gap: 0px;
     align-items: center;
-    align-content: center;
-    width: 100%;
     margin-left: auto;
+    margin-right: auto;    
     /* background-color: #918E9B; */
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    margin-left: 20px;
-    margin-right: auto;    
 }
 
 main.dark .main--content {
     color: white;
-    margin-left: 20px;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .main--content > p {
     margin-bottom: 0%;
     margin-top: 0%;
-    margin-left: 0%;
+    margin-left: 1%;
+    font-size: large;
+    /* align-self: center; */
 }
 
 .main--content > h1 {
+    margin-right: auto;
     margin-bottom: 0%;
     margin-top: 0%;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      225deg,
+      #19fa7e 0%,
+      #10ad9e 29%,
+      #13d4ff 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+        font-size: 40px;
+    
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
+
+.main--content > h4 {
+    /* align-self: center; */
+    margin-bottom: 0%;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+@media (max-width: 700px) {
+    .main--content {
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25px;
+
+    }
 }
 
                                     /* Skills Section*/
