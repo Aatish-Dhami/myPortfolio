@@ -8,7 +8,7 @@ export default function Projects(props) {
                 <div className="projects--grid--item">
                 <Cards 
                     darkMode={props.darkMode} 
-                    src="../images/notes.png"
+                    src="../images/projects/notes.png"
                     url="https://notes-ad.netlify.app/"
                     title="Notes App"
                     desc="Built a notes app using react. Click to visit the live site and write some quick notes :)"
@@ -17,7 +17,7 @@ export default function Projects(props) {
                 <div className="projects--grid--item">
                 <Cards 
                     darkMode={props.darkMode} 
-                    src="../images/search.png"
+                    src="../images/projects/search.png"
                     url="https://github.com/Aatish-Dhami/MySearchEngine"
                     title="Search Engine"
                     desc="Built a search engine using positional inverted Index with numerous 
@@ -29,7 +29,7 @@ export default function Projects(props) {
                 <div className="projects--grid--item">
                 <Cards 
                     darkMode={props.darkMode} 
-                    src="../images/path.png"
+                    src="../images/projects/path.png"
                     url="https://path-visualizer-ad.netlify.app"
                     title="Path Visualizer"
                     desc="Built a Path Visualizer using React.Js
@@ -39,7 +39,7 @@ export default function Projects(props) {
                 <div className="projects--grid--item">
                 <Cards 
                     darkMode={props.darkMode} 
-                    src="../images/tenzies.png"
+                    src="../images/projects/tenzies.png"
                     url="https://tenzies-ad.netlify.app/"
                     title="Tenzies"
                     desc="Built a Tenzies game using React.Js.

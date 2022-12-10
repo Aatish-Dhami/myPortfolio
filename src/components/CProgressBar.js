@@ -10,13 +10,21 @@ export default function CProgressBar(props) {
     const myInterval = React.useRef();
     const dark = props.darkMode ? "white": "black"
 
-    const progressValueStyles = {
-        // textContent: props.text,
-        color: dark
+    // const progressValueStyles = {
+    //     // textContent: props.text,
+    //     paddingRight: 1, 
+    //     paddingTop: 1,
+    //     display : 'inline-block',
+    //     // color: dark
+    // }
+
+    const imageStyles = {
+        height: "60px"
+
     }
 
     const circularProgressStyles = {
-        background: `conic-gradient(aquamarine ${counter * 3.6}deg, #ededed 0deg)`
+        background: `conic-gradient(rgb(197, 156, 252) ${counter * 3.6}deg, #ededed 0deg)`
     }
 
     // React.useEffect(() => {
@@ -50,8 +58,59 @@ export default function CProgressBar(props) {
 
 
     return (
-        <div ref={myRef} className="circular-progress" style={circularProgressStyles}>
-            <span style={progressValueStyles} className="progress-value">{props.text}</span>
+        <div 
+            ref={myRef} 
+            className="circular-progress" 
+            style={circularProgressStyles} 
+            // onMouseOver={e => {
+            //     return (
+            //         e.currentTarget.style={background: `conic-gradient(rgb(127, 255, 170) ${counter * 3.6}deg, #ededed 0deg)`}
+            //     )
+            // }}
+            >
+
+            <img 
+                    className="skills-image progress-value" 
+                    style={imageStyles}
+                    src={props.darkMode? props.imgSrc3 : props.imgSrc1}
+                    onMouseOver={e => {
+                        return (
+                            e.currentTarget.src = props.darkMode? props.imgSrc4 : props.imgSrc2,
+                            e.currentTarget.style = {height: "100px"}
+                        )
+                    }}
+                    onMouseOut={e => {
+                        return(
+                            e.currentTarget.src = props.darkMode? props.imgSrc3 : props.imgSrc1,
+                            e.currentTarget.style = {height: "50px"}    
+                        )
+                    }}
+                        
+                        
+                />
+            {/* <span  className="progress-value">
+                <img 
+                    className="skills-image" 
+                    style={imageStyles}
+                    src={props.darkMode? props.imgSrc3 : props.imgSrc1}
+                    onMouseOver={e => {
+                        return (
+                            e.currentTarget.src = props.darkMode? props.imgSrc4 : props.imgSrc2,
+                            e.currentTarget.style = {height: "100px"}
+                        )
+                    }}
+                    onMouseOut={e => {
+                        return(
+                            e.currentTarget.src = props.darkMode? props.imgSrc3 : props.imgSrc1,
+                            e.currentTarget.style = {height: "50px"}    
+                        )
+                    }}
+                        
+                        
+                />
+            </span> */}
+
+            {/* <span style={progressValueStyles} className="progress-value">{props.text}</span> */}
         </div>
     )
 }

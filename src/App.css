@@ -261,7 +261,7 @@ main.dark .main--content {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: conic-gradient(aquamarine 3.6deg, #ededed 0deg);
+    background: conic-gradient(rgb(255, 214, 127) 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,11 +284,23 @@ main.dark .main--content {
     background-color: black;
 }
 
-.progress-value{
+/* .progress-value{
     position: relative;
     font-size: 20px;
     font-weight: 400;
     color: #606060;
+} */
+
+.progress-value{
+    position: relative;
+    padding-right: 2px; 
+    padding-top: 2px; 
+    display:inline-block;
+}
+
+.skills-image {
+    height: 60px;
+    /* border-radius: 50%; */
 }
 
                                     /* Projects */
