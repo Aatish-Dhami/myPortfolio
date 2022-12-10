@@ -48,7 +48,7 @@ export default function Skills(props) {
                 {/* HTML */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={80} 
+                    endValue={85} 
                     speed={20} 
                     text="HTML" 
                     darkMode={props.darkMode} 
@@ -63,7 +63,7 @@ export default function Skills(props) {
                 {/* CSS */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={75} 
+                    endValue={85} 
                     speed={20} 
                     text="CSS" 
                     darkMode={props.darkMode} 
@@ -75,7 +75,7 @@ export default function Skills(props) {
                 {/* React */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={70} 
+                    endValue={85} 
                     speed={20} 
                     text="React.js" 
                     darkMode={props.darkMode} 
@@ -90,7 +90,7 @@ export default function Skills(props) {
                 {/* Selenium */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={65} 
+                    endValue={75} 
                     speed={20} 
                     text="Selenium" 
                     darkMode={props.darkMode} 
@@ -102,7 +102,7 @@ export default function Skills(props) {
                 {/* Pandas */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={60} 
+                    endValue={75} 
                     speed={20} 
                     text="Pandas" 
                     darkMode={props.darkMode} 
@@ -144,7 +144,7 @@ export default function Skills(props) {
                 {/* matplotlib */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={65} 
+                    endValue={70} 
                     speed={20} 
                     text="Matplotlib" 
                     darkMode={props.darkMode} 
@@ -156,7 +156,7 @@ export default function Skills(props) {
                 {/* git */}
                 <CProgressBar 
                     startValue={0} 
-                    endValue={65} 
+                    endValue={80} 
                     speed={20} 
                     text="Git" 
                     darkMode={props.darkMode} 

@@ -24,7 +24,8 @@ export default function CProgressBar(props) {
     }
 
     const circularProgressStyles = {
-        background: `conic-gradient(rgb(197, 156, 252) ${counter * 3.6}deg, #ededed 0deg)`
+        background: `conic-gradient(rgb(197, 156, 252), aqua, rgb(156, 252, 209) 
+        ${counter * 3.6}deg, ${props.darkMode? '#000000' : '#ffffff'} 0deg)`
     }
 
     // React.useEffect(() => {
